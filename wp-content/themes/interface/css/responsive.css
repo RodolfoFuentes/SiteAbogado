@@ -99,6 +99,9 @@
 		float: none;
 		margin: 0;
 	}
+	.col-6,.col-4{
+		width: 100%;
+	}
 }
 
 /* All Mobile Portrait size smaller than 768 (devices and browsers) */
@@ -408,6 +411,9 @@
 		padding-top: 10px;
 		text-align: center;
 	}
+	.col-6,.col-4{
+		width: 100%;
+	}
 }
 
 /* All Mobile landscape size and All Mini Tablet Portrait size smaller than standard 768 and larger than 480 (devices and browsers) */
@@ -453,6 +459,9 @@
 		margin-left: 14px;
 		width: 203px;
 	}
+	.col-6,.col-4{
+		width: 100%;
+	}
 }
 
 /* All Mobile size smaller than standard 320 (devices and browsers) */
@@ -465,6 +474,9 @@
 	.custom-gallery #main .one-half,
 	.custom-gallery #main .one-third,
 	.custom-gallery #main .one-fourth {
+		width: 100%;
+	}
+	.col-6,.col-4{
 		width: 100%;
 	}
 }

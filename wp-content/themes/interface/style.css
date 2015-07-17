@@ -1032,7 +1032,7 @@ a.more-link:hover {
 	line-height: 42px;
 	padding: 10px 20px;
 	background-color: #d99c45;
-	background-color: rgba(99, 198, 174, 0.9);
+	background-color: #56390F;
 	color: #fff;
 }
 .featured-text .featured-title a {
@@ -1536,6 +1536,8 @@ footer.entry-meta a.readmore {
 	color: #333;
 	padding-bottom: 0;
 	text-transform: uppercase;
+	margin-top: 5%;
+	margin-bottom: 3%;
 }
 .custom-gallery-title a:hover {
 	color: #d99c45;
@@ -2005,6 +2007,7 @@ div.bbp-search-form button {
 	font-weight: bold;
 	font-size: 22px;
 	line-height: 29px;
+	text-align: center;
 }
 
 /* Search Widget */
@@ -2359,4 +2362,19 @@ div.bbp-search-form button {
 }
 #site-generator .copyright a:hover {
 	color: #d99c45;
+}
+
+/*-------------------------------------------------*/
+.center{
+	text-align: center !important;
+}
+.col-6{
+	display: inline-block;
+	vertical-align: top;
+	width: 49.8%;
+}
+.col-4{
+	display: inline-block;
+	vertical-align: top;
+	width: 33%;
 }
