@@ -10,13 +10,10 @@
 <?php get_header(); ?>
 
 <!-- CAROUSEL -->
-<div>
+<div class="slider-home">
 	<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Slider_header')) : endif; ?>
 </div>	
 <!-- END CAROUSEL -->
-<div class="col-xs-12 col-lg-8 well">
-      <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Articles_destacado')) : endif; ?>
-</div>
 <?php
 	/** 
 	 * interface_before_main_container hook

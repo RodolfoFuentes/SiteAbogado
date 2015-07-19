@@ -170,7 +170,7 @@ function interface_theloop_for_archive() {
 						}?>
       </span><!-- .tag-links -->
       <?php
-						echo '<a class="readmore" href="' . get_permalink() . '" title="'.the_title( '', '', false ).'">'.__( 'Read more', 'interface' ).'</a>';
+						echo '<a class="readmore" href="' . get_permalink() . '" title="'.the_title( '', '', false ).'">'.__( 'Leer mas', 'interface' ).'</a>';
 						?>
     </footer>
     <!-- .entry-meta --> 
