@@ -1142,8 +1142,8 @@ a.more-link:hover {
 /* =Content
 ----------------------------------------------- */
 #main {
-	/*padding: 60px 0 10px;*/
-	padding: 0px;
+	padding: 60px 0 10px;
+	/*padding: 0px;*/
 }
 #main form input,
 #main form textarea {
@@ -2377,4 +2377,13 @@ div.bbp-search-form button {
 	display: inline-block;
 	vertical-align: top;
 	width: 33%;
+}
+#primary-full{
+	width: 100%;
+}
+#primary-full #content{
+	text-align: center;
+}
+#primary-full #content .entry-content{
+	text-align: left;
 }

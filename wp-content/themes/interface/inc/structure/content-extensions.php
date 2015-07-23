@@ -305,9 +305,9 @@ function interface_theloop_for_single() {
         <div class="by-author vcard author"><span class="fn"><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"  title="<?php  esc_attr(the_author()); ?>">
           <?php the_author(); ?>
           </a></span></div>
-        <div class="date updated"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_time() ); ?>">
+        <!-- <div class="date updated"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_time() ); ?>">
           <?php the_time( get_option( 'date_format' ) ); ?>
-          </a></div>
+          </a></div> -->
         <?php if ( comments_open() ) { ?>
         <div class="comments">
           <?php comments_popup_link( __( 'No Comments', 'interface' ), __( '1 Comment', 'interface' ), __( '% Comments', 'interface' ), '', __( 'Comments Off', 'interface' ) ); ?>
@@ -1021,27 +1021,10 @@ add_action( 'interface_404_content', 'interface_display_404_page_content', 10 );
 function interface_display_404_page_content() {
 ?>
   <div id="content">
-    <header class="entry-header">
-      <h1 class="entry-title">
-        <?php _e( 'Error 404-Page NOT Found', 'interface' ); ?>
-        </a></h1>
-    </header>
     <div class="entry-content clearfix" >
-      <p>
-        <?php _e( 'It seems we can\'t find what you\'re looking for.', 'interface' ); ?>
-      </p>
-      <h3>
-        <?php _e( 'This might be because:', 'interface' ); ?>
+      <h3 style="text-align: center; margin-top: 5%;margin-bottom: 5%">
+        <?php _e( 'La página que estas buscando no se encuentra', 'interface' ); ?>
       </h3>
-      <p>
-        <?php _e( 'You have typed the web address incorrectly, or the page you were looking for may have been moved, updated or deleted.', 'interface' ); ?>
-      </p>
-      <h3>
-        <?php _e( 'Please try the following instead:', 'interface' ); ?>
-      </h3>
-      <p>
-        <?php _e( 'Check for a mis-typed URL error, then press the refresh button on your browser.', 'interface' ); ?>
-      </p>
     </div>
     <!-- .entry-content --> 
   </div>
