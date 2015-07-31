@@ -116,7 +116,7 @@ function interface_theloop_for_archive() {
   <?php do_action( 'interface_before_post_header' ); ?>
   <article>
     <?php
-				if( has_post_thumbnail() ) {
+				/*if( has_post_thumbnail() ) {
 					$image = '';        			
 		     		$title_attribute = the_title_attribute( array( 'echo' => false ) );
 		     		$image .= '<figure class="post-featured-image">';
@@ -126,7 +126,7 @@ function interface_theloop_for_archive() {
 		  			$image .= '</figure>';
 
 		  			echo $image;
-		  		}
+		  		}*/
 	  			?>
     <header class="entry-header">
       <?php if (get_the_author() !=''){?>
@@ -154,6 +154,13 @@ function interface_theloop_for_archive() {
           <?php comments_popup_link( __( 'No Comments', 'interface' ), __( '1 Comment', 'interface' ), __( '% Comments', 'interface' ), '', __( 'Comments Off', 'interface' ) ); ?>
         </div>
         <?php } ?>
+        <span class="tag-links">
+      <?php $tag_list = get_the_tag_list( '', __( ' ', 'interface' ) );
+            if(!empty($tag_list)){
+          echo $tag_list;
+          
+            }?>
+      </span><!-- .tag-links -->
       </div>
       <!-- .entry-meta --> 
     </header>
@@ -162,16 +169,12 @@ function interface_theloop_for_archive() {
       <?php the_excerpt(); ?>
     </div>
     <!-- .entry-content -->
-    <footer class="entry-meta clearfix"> <span class="tag-links">
-      <?php $tag_list = get_the_tag_list( '', __( ' ', 'interface' ) );
-						if(!empty($tag_list)){
-					echo $tag_list;
-					
-						}?>
-      </span><!-- .tag-links -->
+    <footer class="entry-meta clearfix"> 
+      <span>
       <?php
 						echo '<a class="readmore" href="' . get_permalink() . '" title="'.the_title( '', '', false ).'">'.__( 'Leer mas', 'interface' ).'</a>';
 						?>
+            </span>
     </footer>
     <!-- .entry-meta --> 
      <?php } else { ?>
@@ -406,6 +409,13 @@ function interface_theloop_for_search() {
     <div class="entry-content clearfix">
       <?php the_excerpt(); ?>
     </div>
+    <footer class="entry-meta clearfix"> 
+      <span>
+      <?php
+            echo '<a class="readmore" href="' . get_permalink() . '" title="'.the_title( '', '', false ).'">'.__( 'Leer mas', 'interface' ).'</a>';
+            ?>
+            </span>
+    </footer>
     <?php do_action( 'interface_after_post_content' ); ?>
   </article>
 </section>
@@ -417,7 +427,7 @@ function interface_theloop_for_search() {
 	else {
 		?>
 <h1 class="entry-title">
-  <?php _e( 'No Posts Found.', 'interface' ); ?>
+  <?php _e( 'Pagina no Encontrada.', 'interface' ); ?>
 </h1>
 <?php
    }
@@ -963,7 +973,7 @@ function interface_display_contact_page_template_content() {
 			do_action( 'interface_before_post' );
 ?>
   <div id="primary" class="no-margin-left">
-    <div id="content">
+    <div id="content" class="content">
       <?php do_action( 'interface_before_post_content' ); ?>
       <div class="entry-content clearfix">
         <?php the_content(); ?>

@@ -102,6 +102,9 @@
 	.col-6,.col-4{
 		width: 100%;
 	}
+	#theme-my-login form{
+	width: 100%;
+	}
 }
 
 /* All Mobile Portrait size smaller than 768 (devices and browsers) */
@@ -414,6 +417,9 @@
 	.col-6,.col-4{
 		width: 100%;
 	}
+	#theme-my-login form{
+	width: 100%;
+	}
 }
 
 /* All Mobile landscape size and All Mini Tablet Portrait size smaller than standard 768 and larger than 480 (devices and browsers) */
@@ -462,6 +468,9 @@
 	.col-6,.col-4{
 		width: 100%;
 	}
+	#theme-my-login form{
+	width: 100%;
+	}
 }
 
 /* All Mobile size smaller than standard 320 (devices and browsers) */
@@ -478,5 +487,8 @@
 	}
 	.col-6,.col-4{
 		width: 100%;
+	}
+	#theme-my-login form{
+	width: 100%;
 	}
 }

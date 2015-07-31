@@ -27,10 +27,10 @@ if ( post_password_required() )
   <h2 class="comments-title">
     <?php
 				if( 1 == get_comments_number() ) {
-					printf( __( 'One thought on &ldquo;%2$s&rdquo;', 'interface' ), number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
+					//printf( __( 'One thought on &ldquo;%2$s&rdquo;', 'interface' ), number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
 				}
 				else {
-					printf( __( '%1$s thoughts on &ldquo;%2$s&rdquo;', 'interface' ), number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
+					//printf( __( '%1$s thoughts on &ldquo;%2$s&rdquo;', 'interface' ), number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
 				}				
 			?>
   </h2>

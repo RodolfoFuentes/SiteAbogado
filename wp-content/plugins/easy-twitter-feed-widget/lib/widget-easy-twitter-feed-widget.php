@@ -86,11 +86,13 @@ class Kamn_Widget_Easytwitterfeedwidget extends WP_Widget {
 		<div class="widget-easy-twitter-feed-widget-global-wrapper">
 			<div class="widget-easy-twitter-feed-widget-container">
 
+				<?php if ( ! empty( $instance['title'] ) ) : ?>
 				<div class="row">
 				  <div class="col-lg-12">
 					<?php echo $before_title . '<span>' . apply_filters( 'widget_title',  $instance['title'], $instance, $this->id_base ) . '</span>' . $after_title; ?>
 				  </div>
 				</div>
+				<?php endif; ?>
 
 	          	<div class="widget-easy-twitter-feed-widget-row">
 		          	<div class="widget-easy-twitter-feed-widget-col">

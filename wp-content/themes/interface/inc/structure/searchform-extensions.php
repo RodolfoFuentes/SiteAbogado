@@ -19,10 +19,10 @@ function interface_display_searchform() {
 
 <form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get" class="searchform clearfix">
   <label class="assistive-text">
-    <?php _e( 'Search', 'interface' ); ?>
+    <?php _e( 'Buscar', 'interface' ); ?>
   </label>
-  <input type="search" placeholder="<?php esc_attr_e( 'Search', 'interface' ); ?>" class="s field" name="s">
-  <input type="submit" value="<?php esc_attr_e( 'Search', 'interface' ); ?>" class="search-submit">
+  <input type="search" placeholder="<?php esc_attr_e( 'Buscar', 'interface' ); ?>" class="s field" name="s">
+  <input type="submit" value="<?php esc_attr_e( 'Buscar', 'interface' ); ?>" class="search-submit">
 </form>
 <!-- .search-form -->
 <?php

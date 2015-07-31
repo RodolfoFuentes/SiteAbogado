@@ -145,7 +145,8 @@ function interface_core_functionality() {
 	add_image_size( 'slider-narrow', 1038, 500, true ); 		// used on Featured Slider on Homepage Header for narrow layout
 	add_image_size( 'slider-wide', 1440, 500, true ); 			// used on Featured Slider on Homepage Header for wide layout
 	add_image_size( 'gallery', 474, 342, true ); 				// used to show gallery all images
-	add_image_size( 'icon', 100, 100, true );						//used for icon on business layout
+	add_image_size( 'icon', 100, 100, true );					//used for icon on business layout
+	add_image_size( 'thumbnails-circle', 150, 150, true );		//used for thumbnails-radius on business layout
 	
 
 	/**

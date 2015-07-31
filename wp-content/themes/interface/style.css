@@ -338,7 +338,7 @@ input[type="url"],
 input[type="date"],
 textarea {
 	padding: 10px;
-	border: 1px solid rgba(0, 0, 0, 0.05);
+	border: 1px solid rgba(0, 0, 0, 0.26);
 	width: 100%;
 	margin: 0 0 30px;
 	background-color: #f9f9f9;
@@ -517,7 +517,7 @@ a.readmore {
 	border-radius: 3px;
 	padding: 1px 8px 2px;
 	margin-bottom: 7px;
-	float: right;
+	float: left;
 	background-color: #d99c45;
 	-ms-transition: all 0.3s ease-out;
 	-moz-transition: all 0.3s ease-out;
@@ -1469,6 +1469,10 @@ footer.entry-meta a.readmore {
 	width: 22.02%;
 }
 
+.no-sidebar-template .content{
+	width: 100% !important;
+}
+
 /* Sidebar */
 #secondary {
 	float: left;
@@ -2378,6 +2382,11 @@ div.bbp-search-form button {
 	vertical-align: top;
 	width: 33%;
 }
+.col-3{
+	display: inline-block;
+	vertical-align: top;
+	width: 24.9%;
+}
 #primary-full{
 	width: 100%;
 }
@@ -2386,4 +2395,17 @@ div.bbp-search-form button {
 }
 #primary-full #content .entry-content{
 	text-align: left;
+}
+.borderRadius200{
+	border-radius: 50%;
+	height: 150px;
+	border: 2px solid !important;
+}
+
+#theme-my-login form{
+	width: 50%;
+    margin: 0 auto;
+}
+#text-9{
+	margin: 0;
 }

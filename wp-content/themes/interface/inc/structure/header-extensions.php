@@ -519,10 +519,10 @@ function interface_header_title() {
 		$interface_header_title = single_cat_title( '', FALSE );
 	}
 	elseif( is_404() ) {
-		$interface_header_title = __( 'Page NOT Found', 'interface' );
+		$interface_header_title = __( 'Pagina no encontrada', 'interface' );
 	}
 	elseif( is_search() ) {
-		$interface_header_title = __( 'Search Results', 'interface' );
+		$interface_header_title = __( 'Resultados de la Busqueda', 'interface' );
 	}
 	elseif( is_page_template()  ) {
 		$interface_header_title = get_the_title();

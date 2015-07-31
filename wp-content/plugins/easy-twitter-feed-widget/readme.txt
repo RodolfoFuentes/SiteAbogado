@@ -3,9 +3,9 @@ Contributors: designorbital
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags: twitter, twitter feed, tweet, twitter widget, feed, widget, twitter sidebar, social, social media, sidebar, plugin
-Requires at least: 3.8
-Tested up to: 4.0
-Stable tag: 0.3
+Requires at least: 4.0
+Tested up to: 4.2.3
+Stable tag: 0.4
 
 Add twitter feeds on your WordPress site by using the Easy Twitter Feed Widget plugin.
 
@@ -46,6 +46,10 @@ Easy Twitter Feed Widget plugin is developed by DesignOrbital. You may be intere
 4. Easy Twitter Feed Widget Frontend Example: You can use our twitter widget with any color scheme of your WordPress theme. This is an example of Light and Dark WordPress theme layout.
 
 == Changelog ==
+
+= 0.4 - July 27, 2015 =
+
+* Enhancement: No widget title HTML markup will print when the widget title is empty.
 
 = 0.3 - November 13, 2014 =
 
